@@ -5,23 +5,23 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Usuario usuario = new Usuario(1, "Carlos", "carlos@gmail.com", "1234");
-		Tarefa tarefa1 = new Tarefa(101, "Estudiar Java", "Repasar herencia y polimorfismo", hoy, true,hoy,hoy);
-        Tarefa tarefa2 = new Tarefa(102, "Ir al supermercado", "Comprar leche y huevos", hoy, true );
-        Tarefa tarefa3 = new Tarefa(103, "Ejercicio", "Correr 5km", hoy, true);
+		Tarefa tarefa1 = new Tarefa(101, "Estudar Java", "revisao de herenca y polimorfismo", hoje, true,hoje,hoje);
+        Tarefa tarefa2 = new Tarefa(102, "vá ao supermercado", "Comprar leite e ovos", hoje, true );
+        Tarefa tarefa3 = new Tarefa(103, "exercício", "Correr 5km", hoje, true);
 
 
 	        usuario.adicionarTarefa(tarefa1);
 	        usuario.adicionarTarefa(tarefa2);
 	        usuario.adicionarTarefa(tarefa3);
 
-	        System.out.println("📋 Lista de tareas:");
+	        System.out.println(" Lista de tarefas:");
 	        usuario.exibirTarefas();
 
 
 	        usuario.removerTarefa(102);
 
 
-	        System.out.println("\n📋 Lista de tareas después de eliminar la tarea con ID 102:");
+	        System.out.println("\n Lista de tarefas após a exclusão da tarefa com ID 102:");
 	        usuario.exibirTarefas();
 	    }
 	}
